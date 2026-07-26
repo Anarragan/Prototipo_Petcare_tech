@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 
 import Landing from "../pages/landing/home";
 import SelectRole from "../pages/landing/selectRole";
@@ -8,7 +8,7 @@ import NotFound from "../pages/notFound";
 
 export default function AppRouter() {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="/role" element={<SelectRole />} />
@@ -16,6 +16,6 @@ export default function AppRouter() {
                 <Route path="/provider" element={<ProviderDashboard />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
