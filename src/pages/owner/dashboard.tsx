@@ -12,6 +12,8 @@ import DashboardKeyValueRow from "../../components/dashboard/DashboardKeyValueRo
 import DashboardSectionCard from "../../components/dashboard/DashboardSectionCard";
 import DashboardShell from "../../components/dashboard/DashboardShell";
 import Modal from "../../components/ui/modal";
+import ron from "../../assets/images/ron.png";
+import mapaOwner from "../../assets/images/mapa_owner.png";
 
 const petHighlights = [
     {
@@ -85,7 +87,7 @@ export default function Dashboard() {
                     <div className="flex h-full flex-col">
                         <div className="mt-6 flex flex-col items-center text-center">
                             <img
-                                src="/ron.png"
+                                src={ron}
                                 alt="Ron"
                                 className="h-28 w-28 rounded-full border-4 border-teal object-cover"
                             />
@@ -134,7 +136,7 @@ export default function Dashboard() {
                     <div className="flex h-full flex-col">
                         <div className="flex-1 min-h-0 overflow-hidden rounded-2xl">
                             <img
-                                src="/mapa_owner.png"
+                                src={mapaOwner}
                                 alt="Mapa"
                                 className="h-full w-full object-cover"
                             />

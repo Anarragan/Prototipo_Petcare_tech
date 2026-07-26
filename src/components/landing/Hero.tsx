@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import heroDashboard from "../../assets/images/hero-dashboard.png";
 
 export default function Hero() {
     const navigate = useNavigate();
@@ -51,7 +52,7 @@ export default function Hero() {
       {/* Imagen */}
       <div className="flex-1">
         <img
-          src="/hero-dashboard.png"
+          src={heroDashboard}
           alt="Dashboard PetCare Tech"
           className="
             w-full

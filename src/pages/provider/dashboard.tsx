@@ -12,6 +12,7 @@ import DashboardKeyValueRow from "../../components/dashboard/DashboardKeyValueRo
 import DashboardSectionCard from "../../components/dashboard/DashboardSectionCard";
 import DashboardShell from "../../components/dashboard/DashboardShell";
 import Modal from "../../components/ui/modal";
+import logo from "../../assets/images/logo.png";
 
 const agendaItems = [
     ["09:00", "Consulta General", "Dobby"],
@@ -64,7 +65,7 @@ export default function Dashboard() {
                     <div className="flex h-full flex-col">
                         <div className="flex flex-col items-center text-center">
                             <img
-                                src="/logo.png"
+                                src={logo}
                                 alt="Patitas en casa"
                                 className="h-28 w-28 rounded-full border-4 border-teal object-cover"
                             />

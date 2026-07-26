@@ -1,3 +1,5 @@
+import heroDashboard from "../../assets/images/hero-dashboard.png";
+
 export default function About() {
   return (
     <section id="nosotros" className="bg-bg-app py-16 lg:py-24">
@@ -44,7 +46,7 @@ export default function About() {
 
         <div>
           <img
-            src="/hero-dashboard.png"
+            src={heroDashboard}
             alt="Dashboard PetCare Tech"
             className="w-full rounded-3xl shadow-2xl"
           />
