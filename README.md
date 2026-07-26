@@ -1,5 +1,7 @@
 # PetCare Tech Demo
 
+🚀 **Proyecto desplegado en:** [https://anarragan.github.io/Prototipo_Petcare_tech/](https://anarragan.github.io/Prototipo_Petcare_tech/)
+
 Prototipo web desarrollado con React, TypeScript y Vite para mostrar la experiencia de PetCare Tech. Incluye una landing page, selección de rol, panel de propietario y panel de proveedor.
 
 ## Requisitos
@@ -59,7 +61,7 @@ npm run preview
 - `src/pages/owner/`: dashboard del propietario.
 - `src/pages/provider/`: dashboard del proveedor.
 - `src/components/`: componentes reutilizables de UI y layout.
-- `public/`: imágenes y recursos estáticos.
+- `src/assets/images/`: imágenes y logos del proyecto.
 
 ## Estructura general
 
@@ -67,6 +69,8 @@ npm run preview
 petcare-tech-demo/
   public/
   src/
+    assets/
+      images/
     components/
     layouts/
     pages/
@@ -79,5 +83,5 @@ petcare-tech-demo/
 
 - La navegación principal se controla desde `src/routers/AppRouter.tsx`.
 - La landing usa anclas internas para navegar entre secciones.
-- El logo principal del prototipo está en `public/logo_petcare.png`.
-- Si agregas nuevas imágenes, colócalas en `public/` y referencia la ruta desde la raíz, por ejemplo `/mi-imagen.png`.
+- El logo principal del prototipo está en `src/assets/images/logo_petcare.png`.
+- Si agregas nuevas imágenes, colócalas en `src/assets/images/` y referéncialas en tu código apuntando directamente a esa carpeta (por ejemplo, `href="/src/assets/images/mi-imagen.png"` para el index.html).
